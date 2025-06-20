@@ -1,0 +1,25 @@
+From 732008d563447e1c655083ce7df6614c329109cc Mon Sep 17 00:00:00 2001
+From: Alkerg <albert.arg500@gmail.com>
+Date: Wed, 18 Jun 2025 17:49:06 -0500
+Subject: [PATCH] fix: fix dashboard redirection URL
+
+---
+ app/routes/auth.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/app/routes/auth.py b/app/routes/auth.py
+index caf64f4..0dc9a73 100644
+--- a/app/routes/auth.py
++++ b/app/routes/auth.py
+@@ -46,7 +46,7 @@ async def login_user(request: Request, email: str = Form(...), password: str = F
+ 
+     token = auth_service.create_access_token(user.email, user.username)
+     request.session['token'] = token
+-    return RedirectResponse(url="http://localhost:8000/dashboard", status_code=status.HTTP_302_FOUND)
++    return RedirectResponse(url="/dashboard", status_code=status.HTTP_302_FOUND)
+ 
+ @router.post("/logout")
+ async def logout_user(request: Request):
+-- 
+2.37.2.windows.2
+
