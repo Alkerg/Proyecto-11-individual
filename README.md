@@ -1,6 +1,6 @@
 Albert Ken Argumedo Rosales - albert.argumedo.r@uni.pe
 
-Proyecto 11: "Workflows avanzados de Git: Git flow y trunk-based development local"
+**Proyecto 11:** "Workflows avanzados de Git: Git flow y trunk-based development local"
 
 **Repositorios:**
 
