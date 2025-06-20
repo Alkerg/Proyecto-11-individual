@@ -107,7 +107,7 @@
   Commit ID: eec7bb97037ee4bbc124a661a56cbd3ac4a53afd  
 
   ## Sprint 3
-  - 2025-06-20: Creé `compare_workflows.py` para comparar el número de merges y commits de git flow y trunk based
+- 2025-06-20: Creé `compare_workflows.py` para comparar el número de merges y commits de git flow y trunk based
   Commit: `feat: add script to compare workflows`  
   Commit ID: e2bc00347ac4d6f7d6779f5a65ac6a3a98458d46  
 
